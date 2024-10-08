@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+
+    <!-- Font Awesome CDN Start -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome CDN End -->
+
+    <!-- Fonts Link Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fonts link End -->
+    <style>
+        html {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            scroll-behavior: smooth;
+        }
+
+        #btn, #btn1, #btn {
+            background-color: rgb(14, 122, 129);
+            color: white;
+        }
+        /* #adoptModal{
+            display:block;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Section Start -->
+        <nav>
+            <div class="navbar bg-base-100 w-11/12 mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/logo.webp" alt="logo..">
+                        <a href="#" class="text-2xl font-bold">Peddy</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-gray-500 font-semibold">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="w-7 border-2 rounded-full hover:cursor-pointer"><img class="object-cover"
+                            src="https://img.icons8.com/?size=80&id=114140&format=png" alt="loading..."></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Section End -->
+        
+        <!-- Hero Section Start -->
+        <section>
+            <div class="hero w-11/12 mx-auto">
+                <div class="hero-content text-center">
+                    <div class="w-5/6 space-y-2">
+                        <h1 class="font-bold text-gray-400">Bringing Families Together ❤️‍🔥</h1>
+                        <p class="text-2xl lg:text-6xl py-6 font-bold">
+                            Your Path to Adoption Starts Here
+                        </p>
+                        <div class="space-y-9">
+                            <p class="italic font-semibold">“Pets are not our whole life, but they make our lives
+                                whole.” <br> – Roger Caras</p>
+                            <a href="#allPets"><button id="btn" class="btn ">View More</button></a>
+                            <img src="./assets/pet.webp" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+    </header>
+
+    <main>
+        <!-- Modal Structure with Countdown Start-->
+
+
+        <!-- Modal Structure with Countdown End -->
+        <!-- best friend section -->
+        <section class="w-11/12 mx-auto">
+            <div class="text-center space-y-3">
+                <h1 class="text-3xl font font-black">Adopt Your Best Friend</h1>
+                <p class="text-gray-400 font-semibold text-xs md:text-base">Adopting your best friend means giving a
+                    loving home to a pet in
+                    need, creating an unbreakable bond. <br><span class="hidden lg:block">
+                        It’s a life-changing decision that fills your heart with joy
+                        and loyalty every day.
+                    </span></p>
+
+
+
+
+                    
+                    <!-- Category Section Start -->
+
+                    <section id="Category-Container" class="flex justify-around flex-col items-center gap-3 md:flex-row">
+
+                    </section>
+
+                    <!-- Category Section End-->
+            </div>
+
+        </section>
+
+        <section>
+            <div class="w-10/12 flex mx-auto justify-between mt-10">
+                <h1 class=" text-2xl font-bold">Best Deal For you</h1>
+                <button id="btn1" class="btn">Sort by Price</button>
+            </div>
+        </section>
+        <!-- Loading Bar Start -->
+        <div id="loading" class="text-center hidden">
+            <span  class=" loading loading-bars loading-lg"></span>
+        </div>
+        <!-- Loading Bar End -->
+
+        <section class="flex flex-col lg:flex-row gap-10 w-10/12 mx-auto mt-6">
+            <section class="grid lg:grid-cols-3 gap-5 " id="allPets">
+
+            </section>
+            <section>
+                <div id="favorite" class="border-2 rounded w-96 h-full grid grid-cols-2 gap-2">
+                    
+                </div>
+            </section>
+
+        </section>
+
+        <div id="adoptModal" class=" fixed inset-0 flex items-center justify-center hidden bg-black bg-opacity-50">
+            <div class="bg-white p-6 rounded shadow-md w-80 h-80 flex flex-col justify-center items-center text-center space-y-3">
+                <h2 class="text-lg font-bold">Adoption Successful!</h2>
+                <span id="countdown" class="text-4xl font-bold">3</span>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- all scripts -->
+    <script src="./script/allpets.js"></script>
+    <script src="./script/category.js"></script>
+
+    <script src="./script/fetchDog.js"></script>
+    <script src="./script/fetchCat.js"></script>
+    <script src="./script/fetchRabbit.js"></script>
+    <script src="./script/countModal.js"></script>
+</body>
+
+</html>
